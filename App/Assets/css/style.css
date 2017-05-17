@@ -1,0 +1,307 @@
+html, body {
+	margin:0;
+	padding: 0;
+	font-size: 14px;
+	color: #444;
+	font-family: 'Open Sans', sans-serif;
+}
+* {
+	box-sizing: border-box;	
+}
+a {
+	color:#444;
+	text-decoration: none;
+}
+button {
+	margin:0;
+}
+ul {
+	margin:0;
+	padding: 0;
+	list-style-type: none;
+}
+li {
+	display: block;
+}
+canvas {
+	display: block;
+}
+
+
+/* Pagination */
+.container 
+{
+	float: left;
+	font-size: 16px;
+	width: 100%;
+	padding: 0 25px;
+}
+.container-header {
+	width: 100%;
+	overflow: hidden;
+}
+.container-title {
+	float: left;
+	font-size: 26px;
+	font-weight: 700;
+	padding: 25px 0 10px 0px;
+}
+.container-actions {
+	padding: 35px 0 0 0;
+	float:right;
+}
+.container-actions a:hover {
+	cursor: pointer;
+}
+.container-actions a {
+	margin-right: 12px;
+}
+.row {
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+.col 
+{
+	width: 100px;
+	font-weight: 700;
+	float:left;
+}
+.col + .col {
+	width: 400px;
+	font-weight: 400;
+	margin-left: 30px;
+}
+.row input[type='text'],
+.row select {
+	width: 50%;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+}
+.row textarea {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+
+/* Login */
+#login {
+	position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-top: -110px;
+    margin-left: -150px;
+    width: 300px;
+    height: 220px;
+}
+#login-title {
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#login-form {
+	overflow: hidden;
+}
+#login-form label {
+	float: left;
+	width: 100%;
+	font-size: 16px;
+}
+#login-form input[type='text'] {
+	width: 100%;
+	font-size:18px;
+	border-radius: 5px;
+	border: 1px solid #111;
+	margin: 5px 0;
+	padding: 5px;
+}
+#login-btn {
+	font-weight: 600;
+	background: #111;
+	width: 100%;
+	color:#fff;
+	border: 1px solid #111;
+	border-radius: 5px;
+	padding: 10px 13px;
+}
+#login-btn:hover {
+	color: black;
+	background: #fff;
+}
+
+
+/* TOP */
+#top {
+	float: left;
+	width: 100%;
+	padding: 0 25px;
+	background: black;
+}
+#logo {
+	cursor: default;
+	font-size: 20px;
+    float: left;
+    color: #fff;
+    padding: 12px 0;
+}
+#nav {
+	float: left;
+}
+#nav a {
+	color: #fff;
+	float: left;
+	font-size: 18px;
+	color: #ddd;
+	padding: 15px 0;
+	margin-left: 35px;
+}
+#nav a:hover {
+	color: #fff;
+}
+#user {
+	float: right;
+	position: relative;
+	cursor: pointer;
+}
+#user-image {
+    width: 28px;
+    float: left;
+    padding: 10px 0;
+}
+#user-name {
+	cursor: default;	
+	font-size: 16px;
+	color:#fff;
+	float: left;
+	padding: 17px 0 0 15px;
+}
+#user-options {
+	display: none;
+	position: absolute;
+	background: #fff;
+	border: 1px solid black;
+	top: 45;
+	left: 0;
+}
+#user-image:hover #user-options {
+	display: block;
+}
+#user-options li {
+	padding: 5px 15px;
+}
+#user-options li:hover  {
+	background: #eee;
+}
+
+
+#page-header {
+	width: 100%;
+	float: left;
+	font-size: 26px;
+	font-weight: 700;
+	padding: 25px;
+}
+#page-header a
+{
+	font-size: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+}
+#page-header a:hover {
+	background: #eee;
+}
+
+
+table {
+	font-size:12px;
+	float: left;
+	width: 100%;
+	border-collapse: collapse;
+}
+th {
+	font-weight: 700;
+	border-bottom: 1px solid #bbb;
+	padding: 10px;
+}
+tr:hover td {
+	background: #eee;
+}
+tr:hover a {
+	background: #eee;
+}
+td {
+	cursor: default;
+	text-align: center;
+	padding: 10px;
+}
+table a {
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	border: 0;
+	cursor: pointer;
+}
+table a +  a {
+	margin-left: 15px;
+}
+
+
+/* PAGE NOT FOUND */
+#page-not-found {
+	position: relative;
+	top: 25%;
+	font-size: 2.8vh;
+	text-align:center;
+	transform: translateY(-50%);
+}
+#page-not-found-code {
+	font-size: 10vh;
+	display: block;
+}
+#page-not-found-msg {
+	font-size: 5vh;
+	display: block;
+	margin-bottom: 1vh;
+}
+#page-not-found-link:hover {
+	text-decoration: underline;
+}
+
+#doc-edit-btn, #doc-add-btn {
+	font-weight: 600;
+	background: #111;
+	margin: 10px 0 0 130px;
+	color:#fff;
+	border: 1px solid #111;
+	border-radius: 5px;
+	padding: 10px 13px;
+}
+#doc-edit-btn:hover,
+#doc-add-btn:hover {
+	background: #fff;
+	color:black;
+}
+
+
+
+.ui-state-default, .ui-widget-content .ui-state-default{
+	background: #fff;
+	border: 1px solid #777777;
+    font-weight: 600;
+    color: #444;
+}
+.ui-state-default:hover {
+	background: #444;
+	color:#fff;
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+	background: #444;
+	border: 1px solid #444;
+    font-weight: 600;
+    color: #fff;
+}
